@@ -1,0 +1,7 @@
+certifi==2020.11.8
+numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_1604945996350/work
+pandas==1.1.4
+python-dateutil==2.8.1
+pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1604321279890/work
+scipy @ file:///home/conda/feedstock_root/build_artifacts/scipy_1604304779838/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
