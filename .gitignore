@@ -1,3 +1,14 @@
+# raw decompressed datasets
+data/raw/ml-latest-small/
+
+# test dataset - not mine (nor freely available)
+/test/data/test_complete.txt
+/test/data/test_incomplete.txt
+/test/data/test_solutions.txt
+
+# PyCharm files
+.idea
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
