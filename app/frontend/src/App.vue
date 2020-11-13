@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app :style="{background: '#EEEEEE'}">
     <v-app-bar app color="primary lighten-2">
       <v-toolbar-title>
         <v-icon large>mdi-movie-search</v-icon>
