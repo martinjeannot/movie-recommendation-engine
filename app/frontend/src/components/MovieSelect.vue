@@ -50,22 +50,11 @@ export default {
         .then((response) => {
           this.movies = response.data;
         })
+        // eslint-disable-next-line
         .catch((error) => console.log(error))
         .finally(() => {
           this.loading = false;
         });
-      this.movies = [
-        {
-          id: 1,
-          title: 'The Matrix',
-          year: '1995',
-        },
-        {
-          id: 12,
-          title: 'Toy Story',
-          year: '9458',
-        },
-      ];
     },
   },
   created() {
