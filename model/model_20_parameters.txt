@@ -1,0 +1,1 @@
+K=20, seed=100, achieved log-likelihood=-122802.14945556916
