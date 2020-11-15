@@ -18,3 +18,7 @@ def create_app(test_config=None):
     app.register_blueprint(movies)
 
     return app
+
+
+# see https://github.com/benoitc/gunicorn/issues/2159
+my_app = create_app()

@@ -1,13 +1,17 @@
 certifi==2020.11.8
 click==7.1.2
 Flask==1.1.2
+gunicorn==20.0.4
 itsdangerous==1.1.0
 Jinja2==2.11.2
-MarkupSafe @ file:///home/conda/feedstock_root/build_artifacts/markupsafe_1602267312178/work
-numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_1604945996350/work
+MarkupSafe==1.1.1
+numpy==1.19.4
 pandas==1.1.4
+pip==20.2.4
 python-dateutil==2.8.1
-pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1604321279890/work
-scipy @ file:///home/conda/feedstock_root/build_artifacts/scipy_1604304779838/work
-six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
+pytz==2020.4
+scipy==1.5.3
+setuptools==49.6.0.post20201009
+six==1.15.0
 Werkzeug==1.0.1
+wheel==0.35.1
