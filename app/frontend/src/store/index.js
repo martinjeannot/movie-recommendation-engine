@@ -7,7 +7,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     api: axios.create({
-      baseURL: 'http://127.0.0.1:5000/api',
+      baseURL: 'https://my-movie-recommendation-engine.herokuapp.com/api',
     }),
     movies: [],
   },
