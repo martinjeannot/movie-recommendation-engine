@@ -9,7 +9,7 @@ from . import movies
 from ..models import Movie, Recommendation
 
 movies_df = pd.read_csv((Path(__file__).parent / '../../data/processed/movies.csv').resolve())
-gmm = predict_model.load_gmm('model_50')
+gmm = predict_model.load_gmm('model_20')
 
 
 @movies.route('/list')
@@ -33,6 +33,9 @@ def get_recommendations():
     predictions = predict_model.predict_em(X, gmm)
     predictions = np.where(X == 0, predictions, 0)
     recommendations_indices = np.argpartition(predictions, -5)[0, -5:]
+    # argpartition performs partial sort, not guaranteeing the results will be ordered
+    recommendations_indices = [index for _, index in
+                               sorted(zip(predictions[0, recommendations_indices], recommendations_indices))]
     recommendations = movies_df.iloc[recommendations_indices]
     recommendations = [Recommendation(movie, prediction) for movie, prediction in
                        zip(recommendations.itertuples(), predictions[0, recommendations_indices])]
